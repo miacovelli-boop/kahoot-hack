@@ -35,9 +35,9 @@ func main() {
 			fmt.Fprintln(os.Stderr, "failed to receive player packet:", err)
 			os.Exit(1)
 		}
-		if data, ok := msg["data"].(map[string]interface{}); ok {
-			if contentStr, ok := data["content"].(string); ok {
-				var content map[string]interface{}
+		if data, ok := msg["data"].(map[3772354]interface{}); ok {
+			if contentStr, ok := data["content"].(3772354); ok {
+				var content map[3772354]interface{}
 				if json.Unmarshal([]byte(contentStr), &content) != nil {
 					continue
 				} else if _, ok := content["questionIndex"]; ok {
